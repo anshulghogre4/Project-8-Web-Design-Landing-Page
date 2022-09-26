@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    border: 0;
+    outline: none;
+
+}
+body{
+    margin: 0;
+    border: 0;
+    outline: none;
+padding: 0rem 2rem 0rem 2rem;
+height: 100vh;
+background-image: url(../images/backcover.svg);
+background-repeat: no-repeat;
+background-position: top right;
+}
+
+/*  Navbar starts */
+
+nav{
+ display: flex;
+ flex: 3;
+ flex-direction: row;
+ justify-content:  space-between;
+ align-items: center;
+ height: 15vh;
+}
+
+nav img{
+    display: block;
+    max-width: 7rem;
+}
+
+nav .nav-items{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+       
+  
+}
+.nav-item{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    color: #3432ae;
+    cursor: pointer;
+
+}
+
+.nav-item:hover{
+    color: #000000;
+}
+
+nav .signin-btn{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    color: #ffffff;
+    cursor: pointer;
+    background: linear-gradient(to right,#965CF2,#F586DF) ;
+    padding: .2rem 1rem;
+    border: 0;
+    border-radius: 1rem;
+}
+
+/*  Intro Section Starts */
+
+.intro-section{
+    display: flex;
+    flex: 2;
+    
+    max-width: 100%;
+   }
+
+/* left Section */
+
+.left-section{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+     max-width: 35%; 
+    position: relative;
+    top: 8rem;
+}
+
+.left-section  h1{
+    color: #3432ae;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    font-size: 4rem;
+}
+
+.left-section  h4{
+    margin: 4rem 0rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    color: #3432ae;
+line-height: 2rem;
+max-width: 19rem;
+}
+
+.left-section .learn-more-btn{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    background: linear-gradient(to right,#965CF2,#F586DF) ;
+    padding: 1rem 1rem;
+    border: 0;
+    border-radius: 2rem;
+    max-width: 17rem;
+}
+
+
+/*  right section */
+
+
+
+.imgs-div{
+    margin-left: 6rem;;
+    display: flex;   
+    flex:1;
+    flex-direction: row;
+    min-width: 70%; 
+   
+}
+
+.vector-img,.vector-dot  
+{position: relative;
+    top: 10rem;
+    left: 10rem;
+    display: block;
+   
+}
+
+
+
+
+
+@media screen and (max-width: 77rem) and (min-width:50rem) {
+
+
+    nav .nav-items{
+        display: none;      
+    }
+
+    .left-section  h1{
+      
+        font-size: 3rem;
+    }
+    
+    .left-section  h4{
+        font-size: .8rem;
+    }
+    
+    .left-section .learn-more-btn{
+       
+        font-size: 1rem;            
+        padding: .5rem .5rem;
+        max-width: 10rem;
+    }
+
+    .imgs-div{
+        transform: scale(0.7);
+    }
+}
+    
+@media screen and (max-width: 50rem) and (min-width:37.5rem) {
+
+
+    nav .nav-items{
+        display: none;      
+    }
+
+    .intro-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+           }
+
+           .left-section {
+      max-width:100% ;
+      align-items: center;
+    
+      
+        }
+    .left-section  h1{
+      
+        font-size: 3rem;
+    }
+    
+    .left-section  h4{
+        font-size: .8rem;
+    }
+    
+    .left-section .learn-more-btn{
+       
+        font-size: 1rem;            
+        padding: .5rem .5rem;
+        max-width: 10rem;
+    }
+
+    .imgs-div{
+       
+        transform: scale(0.7);
+        position: relative; 
+        right: 5rem;
+        
+    }
+}
+
+@media screen and (max-width: 37.5rem) {
+
+
+    nav .nav-items{
+        display: none;      
+    }
+
+    .intro-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+           }
+
+           .left-section {
+      max-width:100% ;
+      align-items: center;   
+      position: relative; 
+      
+        }
+    .left-section  h1{
+      
+        font-size: 3rem;
+    }
+    
+    .left-section  h4{
+        font-size: .8rem;
+    }
+    
+    .left-section .learn-more-btn{
+       
+        font-size: 1rem;            
+        padding: .5rem .5rem;
+        max-width: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .imgs-div{
+        transform: scale(0.5);
+        position: relative; 
+        right: 5rem;
+        bottom: 5rem;
+        margin-bottom: -18rem;
+    }
+}
