@@ -22,6 +22,6 @@
 
 ---
 
-## [Live-Link](https://project-7-product-home-page.netlify.app/)
+## [Live-Link](https://project-8-web-design-landing-page.netlify.app/)
 
 ---
